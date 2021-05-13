@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThingTalk</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="run.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id=chat_form>
+            <div id="person_in_group">
+                <img src="/icon/logo_cwe.png" style="display: block; margin-left: auto; margin-right: auto;"/>
+                <div style="font-weight: bold; font-size: large;">Your name:</div>
+                <div id="names"></div>
+                <div style="font-weight: bold; font-size: large;">User Online</div>
+                <div id="user"></div>
+                <div style="font-weight: bold; font-size: large;">Room in: </div>
+                <div id="rooms"></div>
+            </div>
+            <div id="chat">
+                <div id="messages"></div>
+                <div id="form">
+                    <input id="input" class="text"/><button id="bt_send" class="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

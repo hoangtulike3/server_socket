@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThingTalk</title>
+    <script src="https://thingtalk.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="run.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id="signin_container">
+            <img src="icon/logo_cwe.png" alt="Logo CompanyWe"/>
+            <div id="title_signin">
+                PLEASE SIGN IN
+            </div>
+            <div id="signin_form">
+                <input id="name" type="text" placeholder="Username"/>
+                <input id="room" type="text" placeholder="Room"/>
+                <button id="bt_signin" type="button">Join Room</button>
+            </div>
+            
+            <!--<form action="../chat_form.html">
+                <input type="submit" value="Join Room">
+            </form>-->
+        </div>
+        <div id=chat_container> <!--id=chat_form-->
+            <!--<div id="person_in_group">
+                <img src="/icon/logo_cwe.png" style="display: block; margin-left: auto; margin-right: auto;"/>
+                <div style="font-weight: bold; font-size: large;">Your name:</div>
+                <div id="names"></div>
+                <div style="font-weight: bold; font-size: large;">User Online</div>
+                <div id="user"></div>
+                <div style="font-weight: bold; font-size: large;">Room in: </div>
+                <div id="rooms"></div>
+                <button id="bt_delete" type="button">Delete chat</button>
+            </div>
+            <div id="chat">
+                <div id="messages"></div>
+                <div id="form">
+                    <input id="input" class="text"/><button id="bt_send" class="button">Send</button>
+                </div>
+            </div>-->
+            <div id="seach_container">
+                <input type="text" placeholder="Seach"/>
+            </div>
+            <div id="coversation_list">
+                <!--<div class="conversation">
+                    <img src="icon/fb_avt.jpg" alt="Nguyen Mau Hoang"/>
+                    <div class="title_text">
+                        Nguyen Mau Hoang ABCDQWERTYUIOASDFGHJKXCVBNM
+                    </div>
+                    <div class="created_date">
+                        Apr 16
+                    </div>
+                    <div class="conversation_message">
+                        This is a new message
+                        asdfewfifgvhoailjsdhbfligasjbdflijabsnflkajsdbflkajsdbflaskjdbflasdkjfbsadf
+                    </div>
+                </div>-->
+            </div>
+            <div id="new_message_container">
+                <a href="#">+</a>
+            </div>
+            <div id="chat_title">
+                <span id="name_roomchat">CHAT IN ROOM:</span>
+                <img id="bt_delete" src="icon/trash.png" alt="Delete Conversation" />
+            </div>
+            <div id="chat_message_list">
+                <!--<div class="message_row you_message">
+                    <div class="message_content">
+                        <div class="message_text">Good morning</div>
+                        <div class="message_time">Apr 16</div>
+                    </div>
+                </div>
+                <div class="message_row other_message">
+                    <div class="message_content">
+                        <img src="icon/fb_avt.jpg" alt="Nguyen Mau Hoang"/>
+                        <div class="message_text">
+                            Watch how I build out a chat application over 9 minutes 
+                            with some gentle music for you easing pleasure. I’ve never 
+                            done one of these so don’t be too harsh.
+                        </div>
+                        <div class="message_time">Apr 16</div>
+                    </div>
+                </div>-->
+            </div>
+            <div id="chat_form">
+                <img src="icon/attach.png" alt="Add Attachment" />
+                <input id="chat_only" type="text" placeholder="Type a message" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
